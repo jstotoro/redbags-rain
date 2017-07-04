@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>提现</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" href="../css/gamepage.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/mobile-rem.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="game_top clear">
+			<div class="game_user fl">获奖用户</div>
+			<div class="game_scroll fl">
+				<div class="scroll_w clear">
+					<li>恭喜ID232 抽中￥120.00</li>
+                    <li>恭喜ID232 抽中￥120.00</li>
+                    <li>恭喜ID232 抽中￥120.00</li>
+                    <li>恭喜ID232 抽中￥120.00</li>
+                    <li>恭喜ID232 抽中￥120.00</li>
+                    <li>恭喜ID232 抽中￥120.00</li>
+				</div>
+			</div>
+		</div>
+		<div class="openRedbag"></div>
+        <div class="container">
+            <!--抢红包-->
+            <section>
+            <div class="content-init rel">
+            <div class="countdown3">3</div>
+            </div>
+            <div class="content-ing rel">
+            <div class="canvas"></div>
+            </div>
+            <div class="content-result"></div>
+            </section>
+        </div>
+		<div class="game_bottom_ban clear">
+			<div class="game_Yue fl"></div>
+			<div class="game_money fl"><i></i>100.00</div>
+		</div>
+	</div>
+
+    <!-- 红包中奖弹框 -->
+    <div class="game_alert" style="display: none;">
+        <div class="game_alert_child">
+            <p>恭喜您获得</p>
+            <p class="alert_money">￥120.00元</p>
+        </div>
+        <div class="game_alert_btn">确定</div>
+    </div>
+</body>
+</html>
+<script src="../js/index.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var my_length=$('.scroll_w>li').length;
+        for(i=0;i<my_length;i++){
+         var my_wer=(7*i)+'s'
+         $('.scroll_w>li').eq(i).attr("style",'-webkit-animation:shangxia  8s  '+my_wer+' linear');
+        $('.scroll_w>li').eq(i).attr("style",'animation:shangxia  8s  '+my_wer+' linear')
+    }
+    });
+</script>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>提现</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cash.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <script type="text/javascript" src="../js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="../js/mobile-rem.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="cash_top">
+			<div>
+				<span class="Selected">游戏提现</span>
+			</div>
+			<div>
+				<span>佣金提现</span>
+			</div>
+		</div>
+		<div class="cash_body">
+			<div class="cash_box cash_box1">
+				<div class="cash_box_child">
+					<div class="cash_box_title">
+						<p>到账账户</p>
+						<p style="text-align: right;">本微信号零钱包</p>
+					</div>
+					<div class="cash_box_body">
+						<div class="top">兑换金额</div>
+						<div class="middle">
+							<label for="TxtMoney1">￥</label>
+							<input type="text" id="TxtMoney1">
+							<span style="display: none;">手续费<em>0</em>元</span>
+						</div>
+						<div class="bottom">
+							<p class="Yu_e">当前余额：<i>16.65</i></p>
+							<p class="Chao_c" style="display: none;color: red;">输入金额超过当前余额</p>
+						</div>
+					</div>
+				</div>
+				<div class="cash_box_warn">
+					<li>微信必须实名制，否则无法提现成功</li>
+					<li>防止信用卡套现，余额提现收取手续费1%</li>
+					<li>红包不能提现，只能用于抵扣下单</li>
+					<li>每次提现必须是1的整数倍</li>
+				</div>
+				<div class="cash_box_btn">
+					<a>确认提现</a>
+				</div>
+			</div>
+			<div class="cash_box cash_box2" style="display: none;">
+				<div class="cash_box_child">
+					<div class="cash_box_title">
+						<p>到账账户</p>
+						<p style="text-align: right;">本微信号零钱包</p>
+					</div>
+					<div class="cash_box_body">
+						<div class="top">兑换金额</div>
+						<div class="middle">
+							<label for="TxtMoney2">￥</label>
+							<input type="text" id="TxtMoney2">
+							<span style="display: none;">手续费<em>0</em>元</span>
+						</div>
+						<div class="bottom">
+							<p class="Yu_e">当前佣金余额：<i>16.65</i></p>
+							<p class="Chao_c" style="display: none;color: red;">输入金额超过当前余额</p>
+						</div>
+					</div>
+				</div>
+				<div class="cash_box_warn">
+					<li>微信必须实名制，否则无法提现成功</li>
+					<li>防止信用卡套现，余额提现收取手续费1%</li>
+					<li>红包不能提现，只能用于抵扣下单</li>
+					<li>每次提现必须是1的整数倍</li>
+				</div>
+				<div class="cash_box_btn">
+					<a>确认提现</a>
+				</div>
+			</div>
+		</div>
+		<!-- 返回 -->
+		<div class="footer_bar"></div>
+		<div class="footer_back">
+			<a href="index.html">返回</a>
+		</div>
+	</div>
+	<!--  提现不了 -->
+	<div class="deposit_no" style="display: none;">
+		<div class="deposit_body">
+			<div class="close_Btn"></div>
+			<div class="redBag"></div>
+			<div class="deposit_text">提现不了</div>
+			<div class="alert_Btn">找客服</div>
+		</div>
+	</div>
+
+	<!-- 充值不了 -->
+	<div class="Pay_no" style="display: none;">
+		<div class="Pay_body">
+			<div class="close_Btn"></div>
+			<div class="redBag"></div>
+			<div class="Pay_text">充值不了</div>
+			<div class="alert_Btn">找客服</div>
+		</div>
+	</div>
+
+	<!-- 提现成功 -->
+	<div class="deposit_OK" style="display: none;">
+		<div class="deposit_OKbody">
+			<div class="close_Btn"></div>
+			<div class="redBagok"></div>
+			<div class="deposit_text">提现成功</div>
+			<div class="alert_Btnok">确定</div>
+		</div>
+	</div>
+
+	<!-- 提醒弹框 -->
+	<div class="alert_warn" style="display: none;">
+		<div class="alert_warn_body">
+			余额不足
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$('.cash_top>div').click(function(event) {
+		$(this).find('span').addClass('Selected');
+		$(this).siblings().find('span').removeClass('Selected');
+		var index = $(this).index();
+		$('.cash_body>.cash_box:eq('+index+')').delay(1000).show();
+		$('.cash_body>.cash_box:eq('+index+')').siblings().delay(1000).hide();
+	});
+	$('#TxtMoney1').keyup(function(event) {
+		$('.cash_box1').find('span').fadeIn();
+		var my_val = $(this).val()
+		$('.cash_box1').find('em').text(my_val/100);
+		var p_var = parseInt($(this).val());
+		var p_money = parseInt($('.bottom').find('i').text());
+		if (p_var > p_money) {
+			$('.Chao_c').fadeIn();
+			$('.Yu_e').fadeOut();
+		}else{
+			$('.Chao_c').fadeOut();
+			$('.Yu_e').fadeIn();
+		}
+	});
+	$('.cash_box1>.cash_box_btn').click(function(event) {
+		var p_var = parseInt($('#TxtMoney1').val());
+		var p_money = parseInt($('.bottom').find('i').text());
+		if (p_var > p_money) {
+			$('.alert_warn').fadeIn().delay(2000).fadeOut();
+		}else if(p_var == 0 || p_var == 1){
+			$('.deposit_no').fadeIn();
+		}else if (p_var != 0 && p_var > 1){
+			$('.deposit_OK').fadeIn();
+		}
+	});
+
+	$('#TxtMoney2').keyup(function(event) {
+		$('.cash_box2').find('span').fadeIn();
+		var my_val = $(this).val()
+		$('.cash_box2').find('em').text(my_val/100);
+		var p_var = parseInt($(this).val());
+		var p_money = parseInt($('.bottom').find('i').text());
+		if (p_var > p_money) {
+			$('.Chao_c').fadeIn();
+			$('.Yu_e').fadeOut();
+		}else{
+			$('.Chao_c').fadeOut();
+			$('.Yu_e').fadeIn();
+		}
+	});
+	$('.cash_box2>.cash_box_btn').click(function(event) {
+		var p_var = parseInt($('#TxtMoney2').val());
+		var p_money = parseInt($('.bottom').find('i').text());
+		if (p_var > p_money) {
+			$('.alert_warn').fadeIn().delay(2000).fadeOut();
+		}else if(p_var == 0 || p_var == 1){
+			$('.deposit_no').fadeIn();
+		}else if (p_var != 0 && p_var > 1){
+			$('.deposit_OK').fadeIn();
+		}
+	});
+</script>

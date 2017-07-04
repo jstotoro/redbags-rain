@@ -1,0 +1,194 @@
+html,body{
+	background: url(../img/@_cashBottomBG.png)center / cover no-repeat;
+}
+.cash_top{
+	width: 100%;
+	height: .41rem;
+	display: box;
+	display: -webkit-box;
+	border-bottom: .01rem solid #d9d9d9;
+}
+.cash_top>div{
+	box-flex: 1;
+	-webkit-box-flex: 1;
+}
+.cash_top>div span{
+	width: .75rem;
+    height: .415rem;
+	line-height: .41rem; 
+	margin: 0 auto;
+	font-family: "Microsoft YaHei";
+}
+
+.cash_body{
+	margin: .2rem .15rem;
+}
+.cash_box_child{
+	border-radius: .05rem;
+	overflow: hidden;
+	box-shadow: 0.01rem 0.01rem 0.01rem 0.01rem rgba(217,217,217,.22);
+}
+.cash_box_title{
+	height: .385rem;
+	padding: 0 .15rem;
+	display: box;
+	display: -webkit-box;
+	font-family: "Microsoft YaHei";
+	background: url(../img/@_cashBarBG.png)center / cover ;
+}
+.cash_box_title p{
+	width: 50%;
+	line-height: .385rem;
+	box-flex: 1;
+	-webkit-flex: 1;
+}
+.cash_box_title p:nth-child(1){
+	font-weight: bold;
+}	
+
+.cash_box_body{
+	padding: 0 .18rem;
+	background-color: #ffffff;
+}
+.top{
+	padding: .1rem 0;
+}
+.middle{
+	border-bottom: .01rem solid #eaeaea;
+    box-sizing: border-box;
+}
+.bottom{
+	padding: .1rem 0;
+}
+label{
+	font-size: .24rem;
+    width: 50%;
+    height: .38rem;
+    line-height: .38rem;
+    vertical-align: sub;
+}
+input{
+    width: 85%;
+    outline: none;
+    font-size: .2rem;
+    font-weight: bold;
+    padding: .05rem;
+}
+em{
+	color: #db3c16;
+}
+
+.cash_box_warn{
+	padding: .15rem 0 .545rem;
+}
+.cash_box_btn{
+	width: 2.69rem;
+	height: .45rem;
+	margin: 0 auto;
+	background: url(../img/@_cashBtn.png)center / cover no-repeat;
+}
+.cash_box_btn a{
+	line-height: .45rem;
+	text-align: center;
+	color: #f3ec2c;
+	font-family: "Microsoft YaHei";
+    text-shadow: 0.02rem 0.01rem 0.01rem rgba(0,0,0,.35);
+}
+
+/*提现不了弹框*/
+.deposit_no,.Pay_no,.deposit_OK,.alert_warn{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	padding-top: 40%;
+	background-color: rgba(0,0,0,.4);
+}
+.deposit_body,.Pay_body{
+	width: 2.37rem;
+	height: 2.23rem;
+	margin: 0 auto;
+	border-radius: .05rem;
+	position: relative;
+	background:url(../img/@_alertBg.png)center center / cover no-repeat;
+}
+.close_Btn{
+	width: .24rem;
+	height: .24rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: .06rem;
+	background:url(../img/@_closeBtn.png)center center / cover no-repeat;
+}
+.redBag{
+	width: 1.97rem;
+	height: .97rem;
+	position: absolute;
+	top: .185rem;
+	left: .095rem;
+	background:url(../img/@_redBag.png)center center / cover no-repeat;
+}
+.deposit_text,.Pay_text{
+	position: absolute;
+	top: 1.255rem;
+	left: 0;
+	right: 0;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+}
+.alert_Btn{
+	width: 1.05rem;
+	height: .35rem;
+	line-height: .35rem;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+	color: #8c400c;
+	position: absolute;
+	bottom: .15rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background:url(../img/@_alertBtn.png)center center / cover no-repeat;
+}
+
+/*提现成功*/
+.deposit_OKbody{
+	width: 2.37rem;
+	height: 2.23rem;
+	margin: 0 auto;
+	border-radius: .05rem;
+	position: relative;
+	background:url(../img/@_alertBgok.png)center center / cover no-repeat;
+}
+.redBagok{
+	width: 2rem;
+	height: 1.21rem;
+	position: absolute;
+	top: .185rem;
+	left: .23rem;
+	background:url(../img/@_redBagOK.png)center center / cover no-repeat;
+}
+.alert_Btnok{
+	width: 1.05rem;
+	height: .35rem;
+	line-height: .35rem;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+	color: #8c400c;
+	position: absolute;
+	bottom: .15rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background:url(../img/@_alertBtnOK.png)center center / cover no-repeat;
+}
+.alert_warn_body{
+	width: 1rem;
+	border-radius: .05rem;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,.8);
+	padding: .1rem .2rem;
+}

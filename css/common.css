@@ -1,0 +1,68 @@
+/*============================文字大小==================================*/
+.index_topBtn a,.index_topMoney div p:nth-child(2),.box_title,.Level,.box_title_name,.pay_title,.Fn_one,.Fn_two_top,.Fn_two_bottom,.Fn_btn a,.detail_name{
+  	font-size: .13rem;
+  }
+.topID_name,.footer_back a,.cash_top>div span,.cash_box_title p,.cash_box_btn a,.alert_Btn,.alert_Btnok,.alert_warn_body,.com_top div span{
+	font-size: .15rem;
+}
+.topID_num,.num,.box_money,.service_title,.service_name,.deposit_text,.Pay_text,.detail_tight p{
+	font-size: .18rem;
+}
+/*================================结束================================*/
+
+/*==================================文字居中======================================*/
+.index_topBtn li,.index_topID,.index_topMoney p,.icon_menu li,.footer_back,.box_list li,.cash_top>div,.cash_box_warn,.service_title,.service_name,.service_addme,.deposit_text,.alert_Btn,.Pay_text,.alert_Btnok,.alert_warn_body,.hint,.com_top div span,.com_body_title li,.com_body_con,.com_body_top i,.Tongji,.KeHu li,.com_num li,.com_body_bottom i,.com_body_bottom_text,.pay_page_box p,.detail_top>div>span{
+	text-align: center;
+}
+/*==================================结束=====================================*/
+
+/*================================文字颜色=======================================*/
+.index_topBtn a,.index_topID,.cash_box_title p,.alert_warn_body,.com_body_title li,.com_body_top i,.com_body_bottom i{
+	color: #ffffff;
+}
+.icon_menu span,.pay_title,.com_body_bottom_text,.top_title,.detail_name{
+	color: #333333;
+}
+.icon_menu .mobi{
+	color: #a07956;
+}
+.box_title,.KeHu li,.com_num li,.Fn_one,.Fn_two_top,.Fn_two_bottom,.Subtract{
+	color: #666666;
+}
+/*==================================结束=====================================*/
+
+
+/*===================================行内元素转块级====================================*/
+.index_topBtn li span,.index_topBtn li a,.item span,.item a,.icon_menu a,.icon_menu span,.icon_menu i,.box_list span,.box_list a,.footer_back a,.cash_top>div span,.cash_box_btn a,.pay_body li>a,.com_top span,.detail_top>div>span{
+	display: block;
+}
+.box_title i,.com_body_top i,.com_body_bottom i,.game_money i{
+	display: inline-block;
+}
+
+/*==================================结束=====================================*/
+
+/*返回按钮*/
+.footer_bar{
+	width: 100%;
+	height: .49rem;
+}
+.footer_back{
+	width: 100%;
+	height: .49rem;
+	line-height: .49rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: .01rem solid #dfdfdf;
+	background-color: #ffffff;
+}
+.Selected{
+	color: #db3c16;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-bottom: .02rem solid #db3c16;
+}
+.plus{
+	color: #db3c16;
+}

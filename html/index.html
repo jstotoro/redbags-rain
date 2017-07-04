@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script type="text/javascript" src="../js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="../js/mobile-rem.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- 头部 -->
+		<div class="index_top">
+			<div class="index_topID">
+				<div class="topID_num">56789</div>
+				<div class="topID_name">ID</div>
+			</div>
+			<div class="index_topBtn">
+				<li><span><a href="pay.html">充值</a></span></li>
+				<li><span><a href="cash.html">提现</a></span></li>
+			</div>
+		</div>
+		<!-- 佣金 -->
+		<div class="index_topMoney">
+			<div class="moip">
+				<p>推广佣金</p>
+				<p>￥124.00</p>
+			</div>
+			<div>
+				<p>游戏余额</p>
+				<p>￥100.00</p>
+			</div>
+		</div>
+		<!-- 红包块 -->
+		<div class="index_body">
+			<ul class="item clear">
+				<li class="items1">
+					<span>
+						<a href="gamepage.html"></a>
+					</span>
+				</li>
+				<li class="items2">
+					<span>
+						<a href="gamepage.html"></a>
+					</span>
+				</li>
+				<li class="items3">
+					<span>
+						<a href="gamepage.html"></a>
+					</span>
+				</li>
+				<li class="items4">
+					<span>
+						<a href="gamepage.html"></a>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<!-- 底部ICON -->
+		<div class="index_footer">
+			<ul class="icon_menu clear">
+				<li class="icon1">
+					<a href="spread.html">
+						<i></i>
+						<span>推广</span>
+						<span class="mobi" style="font-size: .09rem;">动手指就能赚钱</span>
+					</a>
+				</li>
+				<li class="icon2">
+					<a class="clear">
+						<i class="icon2_box fl"></i>
+						<span class="fl">客服小二</span>
+					</a>
+				</li>
+				<li class="icon3">
+					<a href="detail.html">
+						<i></i>
+						<span>资金明细</span>
+					</a>
+				</li>
+				<li class="icon4">
+					<a href="com.html">
+						<i></i>
+						<span>佣金明细</span>
+					</a>
+				</li>
+				<li class="icon5">
+					<a href="myteam.html">
+						<i></i>
+						<span>团队队员</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 客服弹框 -->
+	<div class="service_alert" style="display: none;">
+		<div class="service_body">
+			<div class="service_title">有疑问？可以联系我们</div>
+			<div class="service_img"><img src="../img/@_serviceTwo.png" alt=""></div>
+			<div class="service_name">清风</div>
+			<div class="service_addme">扫一扫二维码，加我微信</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	 $('.icon2').click(function(event) {
+	 	$('.service_alert').fadeIn();
+	 		document.documentElement.style.overflow = "hidden";
+	 });
+	 $(document).click(function(event) {
+	 	$('.service_alert').delay(5000).fadeOut();
+	 	document.documentElement.style.overflow = "auto";
+	 });
+</script>
